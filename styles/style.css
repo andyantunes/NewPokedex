@@ -3,25 +3,43 @@
   padding: 0;
 }
 
+html {
+  /* background: url('./../assets/images/battlegrass.png'); */
+}
+
 body {
   margin: 10vh 0;
+  background: url("./../assets/images/battlegrass.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.external-pokemon {
+  position: absolute;
+  right: 10.5%;
+  top: 36%;
+  opacity: 0.8;
+}
+
+.external-pokemon img {
+  width: 110px;
 }
 
 .pokedex {
-  background: #ccc;
+  background: #b31111;
   border-radius: 1rem;
   max-width: 400px;
   display: flex;
   justify-content: center;
   margin: auto;
-  height: 80vh;
+  height: 70.5vh;
 }
 
 .pokedex-visor {
   background: #fff;
   border-radius: 1rem;
   max-width: 300px;
-  margin: 35px 0 25px;
+  margin: 35px auto 25px;
   padding: 0.5rem 1.5rem;
 }
 
@@ -42,11 +60,6 @@ body {
   margin-bottom: 20px;
 }
 
-.pokemon-image img {
-  width: 120px;
-  height: 120px;
-}
-
 .pokemon-info-container {
   text-align: center;
 }
@@ -58,5 +71,174 @@ body {
   margin: 30px 0 20px;
 }
 
-.pokedex-controls {
+.pokedex-controls form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.search-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.controls-container {
+  position: relative;
+  width: 25%;
+  height: 80px;
+  margin: auto 0;
+}
+
+.search-container .search-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container .search-inputs input {
+  width: 50px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px 3.5px;
+}
+
+.search-container .search-inputs input:nth-child(1) {
+  background: #49a6a6;
+}
+
+.search-container .search-inputs input:nth-child(2) {
+  background: #01bd35;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.search-container .search-button input {
+  padding: 17px 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #f26b1d;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.search-button {
+  text-align: center;
+}
+
+.controls-container .up {
+  top: 0;
+  left: 38%;
+  border-radius: 10px 10px 0 0;
+}
+
+.controls-container .down {
+  bottom: 0;
+  left: 38%;
+  border-radius: 0 0 10px 10px;
+}
+
+.controls-container .right {
+  bottom: 38%;
+  right: 0%;
+  border-radius: 0 10px 10px 0;
+}
+
+.controls-container .left {
+  bottom: 38%;
+  left: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.controls-container .up,
+.controls-container .down {
+  background-color: #222222;
+  width: 22px;
+  height: 50%;
+}
+
+.controls-container .left,
+.controls-container .right {
+  background-color: #222222;
+  width: 50%;
+}
+
+.controls-container i {
+  padding: 3px;
+  cursor: pointer;
+}
+
+.controls-container .up i {
+  padding-top: 0;
+  padding-left: 5.5px;
+}
+
+.controls-container .down i {
+  margin-top: 90%;
+  padding-left: 5.5px;
+}
+
+.controls-container .right i {
+  margin-left: 60%;
+}
+
+.controls-container .left i {
+  padding-left: 5px;
+}
+
+.controls-container label {
+  position: absolute;
+}
+
+.controls-container input {
+  display: none;
+}
+
+.external-circle {
+  background: #171818;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: 40%;
+  top: 38%;
+  position: absolute;
+  z-index: 10;
+}
+
+.internal-circle {
+  background: #100f10;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 17%;
+  top: 11.3%;
+  position: absolute;
+  z-index: 10;
+}
+
+@media (max-width: 992px) {
+  body {
+    margin: 0vh 0;
+  }
+
+  .pokedex {
+    height: 100vh;
+  }
 }
