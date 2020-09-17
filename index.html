@@ -6,11 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex - Consumo API</title>
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <main class="pokedex">
+        <article>
+            <section class="pokedex-visor">
+                <div class="pokemon-identification-container">
+                    <h2 class="pokemon-identification">
+                        <span>NOME</span>
+                        <span>#ID</span>
+                    </h2>
+                </div>
 
+                <div class="pokemon-image">
+                    <picture>
+                        <img src="https://64.media.tumblr.com/0088210a415e8db3379539c027f1e506/tumblr_oqf6v06iEI1tvuzndo9_1280.jpg"
+                            alt="imagem aleatória de teste" />
+                    </picture>
+                </div>
+
+                <div class="pokemon-info-container">
+                    <h3 class="pokemon-info-title">Lorem ipsum dolor sit amet consectetur</h3>
+                    <p class="pokemon-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                        debitis labore distinctio?
+                        Itaque, qui! Eos eum quae.</p>
+                </div>
+            </section>
+
+            <section class="pokedex-controls">
+                <form action="." method="POST">
+                    <div>
+                        <input type="text" name="pokemonName" id="pokemonName" placeholder="NOME" />
+                        <input type="text" name="pokemonId" id="pokemonId" placeholder="ID" />
+                    </div>
+
+                    <div>
+                        <input type="submit" value="BUSCA">
+                    </div>
+
+                    <div>
+                        <label for="upAction">
+                            <i class="fas fa-caret-up"></i>
+                            <input type="radio" name="action" id="upAction">
+                        </label>
+
+                        <label for="rightAction">
+                            <i class="fas fa-caret-right"></i>
+                            <input type="radio" name="action" id="rightAction">
+                        </label>
+
+                        <label for="downAction">
+                            <i class="fas fa-caret-down"></i>
+                            <input type="radio" name="action" id="downAction">
+                        </label>
+
+                        <label for="leftAction">
+                            <i class="fas fa-caret-left"></i>
+                            <input type="radio" name="action" id="leftAction">
+                        </label>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>
