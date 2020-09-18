@@ -4,9 +4,47 @@ ini_set('display_errors', 1);
 ini_set('error_reporting', E_ALL);
 ini_set('xdebug.overload_var_dump', 1);
 
-$URL_DATA = "https://pokeapi.co/api/v2/pokemon/";
+
 $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
 
-$pokemonObject = json_decode(file_get_contents($URL_DATA.'6'));
+function GetPokemon() {
+    if(isset($_POST['pokemonName']) || isset($_POST['pokemonId'])) {
+        $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
+        $data = GetPokemonData($identification);
+        $pokemonObject = MountFinalObject($data);
+    } else {
+        $pokemonObject = IdentificationEmpty();
+    }
 
-// var_dump($pokemonObject->name);
+    return $pokemonObject;
+}
+
+function GetPokemonData(String $identification) {
+    $URL_DATA = "https://pokeapi.co/api/v2/pokemon/{$identification}";
+    return json_decode(file_get_contents($URL_DATA));
+}
+
+function IdentificationEmpty() {
+    return (object) [
+        'id' => '',
+        'name' => '',
+        'types' => '',
+        'description' => '',
+        'attack' => '',
+        'defense' => '',
+        'speed' => '',
+    ];
+}
+
+function MountFinalObject(Object $pokemonObject) {
+    return (object) [
+        'id' => $pokemonObject->id,
+        'name' => $pokemonObject->name,
+        'types' => $pokemonObject->types,
+        'description' => '',
+        'attack' => $pokemonObject->stats[1]->base_stat,
+        'defense' => $pokemonObject->stats[2]->base_stat,
+        'speed' => $pokemonObject->stats[5]->base_stat,
+    ];
+}
+

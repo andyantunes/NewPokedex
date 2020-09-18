@@ -1,4 +1,7 @@
-<?php include_once ('./utils/getPokemon.php') ?>
+<?php 
+include_once ('./utils/getPokemon.php');
+$pokemon = GetPokemon();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +28,8 @@
             <section class="pokedex-visor">
                 <div class="pokemon-identification-container">
                     <h2 class="pokemon-identification">
-                        <span class="pokemon-name"><?=$pokemonObject->name?></span>
-                        <span class="pokemon-id">#<?=$pokemonObject->id?></span>
+                        <span class="pokemon-name"><?=$pokemon->name?></span>
+                        <span class="pokemon-id">#<?=$pokemon->id?></span>
                     </h2>
                 </div>
 
@@ -37,21 +40,29 @@
                 </div>
 
                 <div class="pokemon-info-container">
-                    <p class="power-name">Nome do poder</p>
+                    <p class="power-name">
+                        <span>
+                            <?=$pokemon->types[0]->type->name?>
+                        </span> 
+                        | 
+                        <span>
+                            <?=$pokemon->types[1]->type->name?>
+                        </span>
+                    </p>
                     <p class="description">Lorem ipsum dolor, sit amet consectetur</p>
                     <p class="attack">Ataque 
                         <span>
-                            <?=$pokemonObject->stats[1]->base_stat?>
+                            <?=$pokemon->attack?>
                         </span>
                     </p>
                     <p class="defense">Defesa 
                         <span>
-                            <?=$pokemonObject->stats[2]->base_stat?>
+                            <?=$pokemon->defense?>
                         </span>
                     </p>
                     <p class="speed">Rapidez 
                         <span>
-                            <?=$pokemonObject->stats[5]->base_stat?>
+                            <?=$pokemon->speed?>
                         </span>
                     </p>
                 </div>
@@ -66,7 +77,7 @@
                         </div>
 
                         <div class="search-button">
-                            <input type="submit" value="BUSCA">
+                            <input type="submit" name="search" value="BUSCA">
                         </div>
                     </div>
 
