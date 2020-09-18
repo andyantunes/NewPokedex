@@ -4,13 +4,11 @@ ini_set('display_errors', 1);
 ini_set('error_reporting', E_ALL);
 ini_set('xdebug.overload_var_dump', 1);
 
-
-$URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
-
 function GetPokemon() {
     if(HasIdentification($_POST['pokemonName'], $_POST['pokemonId'])) {
         $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
-        var_dump(GetPokemonData($identification));
+        $data = GetPokemonData($identification);
+        $pokemonObject = MountFinalObject($data);
     } else {
         $pokemonObject = IdentificationEmpty();
     }
@@ -40,7 +38,7 @@ function MountFinalObject(Object $pokemonObject) {
     return (object) [
         'id' => $pokemonObject->id,
         'name' => $pokemonObject->name,
-        'types' => $pokemonObject->types,
+        'types' => ConvertTypesToString($pokemonObject->types),
         'description' => '',
         'attack' => $pokemonObject->stats[1]->base_stat,
         'defense' => $pokemonObject->stats[2]->base_stat,
@@ -48,6 +46,18 @@ function MountFinalObject(Object $pokemonObject) {
     ];
 }
 
-function HasIdentification($name, $id) {
+function HasIdentification(String $name, String $id) {
     return ($name !== '' || $id !== '') ? true : false;
+}
+
+function ConvertTypesToString($types) {
+    $typesString = '';
+    for ($i=0; $i < sizeof($types); $i++) { 
+        $typesString .= ($i == 0) ? "{$types[$i]->type->name}" : " | {$types[$i]->type->name}";
+    }
+    return $typesString;
+}
+
+function GetPokemonIMage($id) {
+    $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
 }

@@ -44,10 +44,6 @@ $pokemon = GetPokemon();
                         <span>
                             <?=$pokemon->types?>
                         </span> 
-                        | 
-                        <span>
-                            <?=$pokemon->types?>
-                        </span>
                     </p>
                     <p class="description">
                         <?=$pokemon->description?>
