@@ -17,9 +17,9 @@ function GetPokemon() {
 }
 
 function GetPokemonData(String $identification) {
-    $URL_DATA = "https://pokeapi.co/api/v2/pokemon/{$identification}";
+    $json = "https://pokeapi.co/api/v2/pokemon/{$identification}";
 
-    return json_decode(file_get_contents($URL_DATA));
+    return json_decode(file_get_contents($json));
 }
 
 function IdentificationEmpty() {
@@ -43,6 +43,7 @@ function MountFinalObject(Object $pokemonObject) {
         'attack' => $pokemonObject->stats[1]->base_stat,
         'defense' => $pokemonObject->stats[2]->base_stat,
         'speed' => $pokemonObject->stats[5]->base_stat,
+        'image' => GetPokemonImage($pokemonObject->id),
     ];
 }
 
@@ -58,6 +59,17 @@ function ConvertTypesToString($types) {
     return $typesString;
 }
 
-function GetPokemonIMage($id) {
+function GetPokemonImage($id) {
     $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
+    $obj = json_decode(file_get_contents($URL_IMAGE));
+    $pokemonArray = $obj->pokemon;
+    $url = '';
+    
+    for ($i=0; $i < sizeof($pokemonArray); $i++) { 
+        if ($pokemonArray[$i]->id === $id) {
+            $url = $pokemonArray[$i]->img;
+            break;
+        }
+    }
+    return $url;
 }
