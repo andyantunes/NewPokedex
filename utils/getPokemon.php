@@ -9,16 +9,18 @@ $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
 
 function GetPokemon() {
     if(HasIdentification($_POST['pokemonName'], $_POST['pokemonId'])) {
-        var_dump($_POST['pokemonName']);
-        var_dump($_POST['pokemonId']);
+        $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
+        var_dump(GetPokemonData($identification));
     } else {
         $pokemonObject = IdentificationEmpty();
     }
+
     return $pokemonObject;
 }
 
 function GetPokemonData(String $identification) {
     $URL_DATA = "https://pokeapi.co/api/v2/pokemon/{$identification}";
+
     return json_decode(file_get_contents($URL_DATA));
 }
 
