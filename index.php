@@ -21,7 +21,7 @@ $pokemon = GetPokemon();
         <article>
             <section class="external-pokemon">
                 <picture>
-                    <img src="http://www.serebii.net/pokemongo/pokemon/006.png" alt="Imagem de um pokemon">
+                    <img src="<?=$pokemon->image?>" alt="Imagem de um pokemon">
                 </picture>
             </section>
 
