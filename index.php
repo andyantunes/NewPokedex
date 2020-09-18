@@ -42,14 +42,16 @@ $pokemon = GetPokemon();
                 <div class="pokemon-info-container">
                     <p class="power-name">
                         <span>
-                            <?=$pokemon->types[0]->type->name?>
+                            <?=$pokemon->types?>
                         </span> 
                         | 
                         <span>
-                            <?=$pokemon->types[1]->type->name?>
+                            <?=$pokemon->types?>
                         </span>
                     </p>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur</p>
+                    <p class="description">
+                        <?=$pokemon->description?>
+                    </p>
                     <p class="attack">Ataque 
                         <span>
                             <?=$pokemon->attack?>

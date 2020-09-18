@@ -12,8 +12,9 @@ function GetPokemon() {
         var_dump($_POST['pokemonName']);
         var_dump($_POST['pokemonId']);
     } else {
-        echo 'oi';
+        $pokemonObject = IdentificationEmpty();
     }
+    return $pokemonObject;
 }
 
 function GetPokemonData(String $identification) {
