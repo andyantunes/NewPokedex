@@ -39,9 +39,21 @@
                 <div class="pokemon-info-container">
                     <p class="power-name">Nome do poder</p>
                     <p class="description">Lorem ipsum dolor, sit amet consectetur</p>
-                    <p class="attack">Ataque <span></span></p>
-                    <p class="defense">Defesa <span></span></p>
-                    <p class="speed">Rapidez <span></span></p>
+                    <p class="attack">Ataque 
+                        <span>
+                            <?=$pokemonObject->stats[1]->base_stat?>
+                        </span>
+                    </p>
+                    <p class="defense">Defesa 
+                        <span>
+                            <?=$pokemonObject->stats[2]->base_stat?>
+                        </span>
+                    </p>
+                    <p class="speed">Rapidez 
+                        <span>
+                            <?=$pokemonObject->stats[5]->base_stat?>
+                        </span>
+                    </p>
                 </div>
             </section>
 
