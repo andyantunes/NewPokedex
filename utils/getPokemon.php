@@ -8,15 +8,12 @@ ini_set('xdebug.overload_var_dump', 1);
 $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
 
 function GetPokemon() {
-    if(isset($_POST['pokemonName']) || isset($_POST['pokemonId'])) {
-        $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
-        $data = GetPokemonData($identification);
-        $pokemonObject = MountFinalObject($data);
+    if(HasIdentification($_POST['pokemonName'], $_POST['pokemonId'])) {
+        var_dump($_POST['pokemonName']);
+        var_dump($_POST['pokemonId']);
     } else {
-        $pokemonObject = IdentificationEmpty();
+        echo 'oi';
     }
-
-    return $pokemonObject;
 }
 
 function GetPokemonData(String $identification) {
@@ -48,3 +45,6 @@ function MountFinalObject(Object $pokemonObject) {
     ];
 }
 
+function HasIdentification($name, $id) {
+    return ($name !== '' || $id !== '') ? true : false;
+}
