@@ -32,12 +32,13 @@ body {
 }
 
 .pokedex-visor {
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 1rem;
   max-width: 260px;
   min-width: 260px;
   margin: 35px auto 25px;
   padding: 0.5rem 1.5rem;
+  border: 5px solid #0d0d0d;
 }
 
 .pokemon-identification-container {
@@ -48,12 +49,12 @@ body {
 .pokemon-identification {
   display: flex;
   justify-content: space-between;
-  background: #efefef;
   border-radius: 0.25rem;
 }
 
 .pokemon-name {
   text-transform: capitalize;
+  text-decoration: underline;
 }
 
 .pokemon-id {
@@ -65,10 +66,11 @@ body {
 }
 
 .pokemon-info-container {
-  text-align: center;
+  text-align: left;
 }
 
-.pokemon-info-title {
+.pokemon-info-container p {
+  margin: 0.5rem 0;
 }
 
 .pokemon-info-content {
@@ -246,6 +248,7 @@ body {
 
   .pokedex {
     height: 72vh;
-    margin-bottom: 28vh;
+    margin-bottom: 14vh;
+    margin-top: 14vh;
   }
 }
