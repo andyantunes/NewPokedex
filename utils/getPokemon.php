@@ -34,8 +34,8 @@ function IdentificationEmpty() {
         'attack' => '',
         'defense' => '',
         'speed' => '',
-        'image' => './assets/root/pokebola.gif',
-        'image_back' => '',
+        'image' => './assets/images/pokebola.gif',
+        'image_back' => './assets/images/transparent.png',
     ];
 }
 
