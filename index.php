@@ -66,6 +66,10 @@ $pokemon = GetPokemon();
                 </div>
             </section>
 
+            <section class="message-container">
+                <span><?=$pokemon->message?></span>
+            </section>
+
             <section class="pokedex-controls">
                 <form action="." method="POST">
                     <div class="search-container">

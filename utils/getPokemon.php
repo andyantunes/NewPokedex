@@ -36,20 +36,22 @@ function IdentificationEmpty() {
         'speed' => '',
         'image' => './assets/images/pokebola.gif',
         'image_back' => './assets/images/transparent.png',
+        'message' => 'Pesquise um pokemon',
     ];
 }
 
 function MountFinalObject(Object $pokemonObject) {
     return (object) [
-        'id' => $pokemonObject->id,
+        'id' => "#{$pokemonObject->id}",
         'name' => $pokemonObject->name,
         'types' => ConvertTypesToString($pokemonObject->types),
         'description' => '',
-        'attack' => $pokemonObject->stats[1]->base_stat,
-        'defense' => $pokemonObject->stats[2]->base_stat,
-        'speed' => $pokemonObject->stats[5]->base_stat,
+        'attack' => "Ataque {$pokemonObject->stats[1]->base_stat}",
+        'defense' => "Defesa {$pokemonObject->stats[2]->base_stat}",
+        'speed' => "Rapidez {$pokemonObject->stats[5]->base_stat}",
         'image' => GetPokemonImage($pokemonObject->id),
         'image_back' => GetPokemonImage($pokemonObject->id),
+        'message' => '',
     ];
 }
 

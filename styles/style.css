@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  height: 70.5vh;
+  height: 72.5vh;
 }
 
 .pokedex-visor {
@@ -37,7 +37,7 @@ body {
   height: 331px;
   max-width: 260px;
   min-width: 260px;
-  margin: 35px auto 25px;
+  margin: 35px auto 12px;
   padding: 0.5rem 1.5rem;
   border: 5px solid #0d0d0d;
 }
@@ -77,6 +77,22 @@ body {
 
 .pokemon-info-content {
   margin: 30px 0 20px;
+}
+
+.message-container {
+  margin: 10px auto;
+  background: #f2f2f2;
+  max-width: 60%;
+  height: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 3px solid rgba(13, 13, 13, 0.8);
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .pokedex-controls form {
