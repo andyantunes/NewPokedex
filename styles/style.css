@@ -58,12 +58,13 @@ body {
   text-decoration: underline;
 }
 
-.pokemon-id {
-}
-
 .pokemon-image {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.pokemon-image picture img {
+  max-width: 160px;
 }
 
 .pokemon-info-container {

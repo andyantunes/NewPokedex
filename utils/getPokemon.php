@@ -34,7 +34,8 @@ function IdentificationEmpty() {
         'attack' => '',
         'defense' => '',
         'speed' => '',
-        'image' => '',
+        'image' => './assets/root/pokebola.gif',
+        'image_back' => '',
     ];
 }
 
@@ -48,6 +49,7 @@ function MountFinalObject(Object $pokemonObject) {
         'defense' => $pokemonObject->stats[2]->base_stat,
         'speed' => $pokemonObject->stats[5]->base_stat,
         'image' => GetPokemonImage($pokemonObject->id),
+        'image_back' => GetPokemonImage($pokemonObject->id),
     ];
 }
 
