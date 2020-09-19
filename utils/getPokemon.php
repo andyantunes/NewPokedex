@@ -5,7 +5,10 @@ ini_set('error_reporting', E_ALL);
 ini_set('xdebug.overload_var_dump', 1);
 
 function GetPokemon() {
-    if(HasIdentification($_POST['pokemonName'], $_POST['pokemonId'])) {
+    $id = (isset($_POST['pokemonId'])) ? $_POST['pokemonId'] : '';
+    $name = (isset($_POST['pokemonName'])) ? $_POST['pokemonName'] : '';
+    
+    if (isset($_POST['search']) && HasIdentification($id, $name)) {
         $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
         $data = GetPokemonData($identification);
         $pokemonObject = MountFinalObject($data);
@@ -31,6 +34,7 @@ function IdentificationEmpty() {
         'attack' => '',
         'defense' => '',
         'speed' => '',
+        'image' => '',
     ];
 }
 
@@ -47,7 +51,7 @@ function MountFinalObject(Object $pokemonObject) {
     ];
 }
 
-function HasIdentification(String $name, String $id) {
+function HasIdentification($name, $id) {
     return ($name !== '' || $id !== '') ? true : false;
 }
 
