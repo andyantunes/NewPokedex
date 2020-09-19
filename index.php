@@ -29,7 +29,7 @@ $pokemon = GetPokemon();
                 <div class="pokemon-identification-container">
                     <h2 class="pokemon-identification">
                         <span class="pokemon-name"><?=$pokemon->name?></span>
-                        <span class="pokemon-id">#<?=$pokemon->id?></span>
+                        <span class="pokemon-id"><?=$pokemon->id?></span>
                     </h2>
                 </div>
 
@@ -48,17 +48,17 @@ $pokemon = GetPokemon();
                     <p class="description">
                         <?=$pokemon->description?>
                     </p>
-                    <p class="attack">Ataque 
+                    <p class="attack"> 
                         <span>
                             <?=$pokemon->attack?>
                         </span>
                     </p>
-                    <p class="defense">Defesa 
+                    <p class="defense"> 
                         <span>
                             <?=$pokemon->defense?>
                         </span>
                     </p>
-                    <p class="speed">Rapidez 
+                    <p class="speed"> 
                         <span>
                             <?=$pokemon->speed?>
                         </span>
