@@ -9,7 +9,7 @@ function GetPokemon() {
     $name = (isset($_POST['pokemonName'])) ? $_POST['pokemonName'] : '';
     
     if (isset($_POST['search']) && HasIdentification($id, $name)) {
-        $identification = ($_POST['pokemonName']) ? $_POST['pokemonName'] : $_POST['pokemonId'];
+        $identification = ($_POST['pokemonName']) ? strtolower($_POST['pokemonName']) : $_POST['pokemonId'];
         $data = GetPokemonData($identification);
         $pokemonObject = MountFinalObject($data);
     } else {
