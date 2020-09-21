@@ -4,7 +4,8 @@
 }
 
 body {
-  margin: 10vh 0;
+  margin: 7.6% 0;
+  overflow-y: auto;
   background: url("./../assets/images/battlegrass.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  height: 72.5vh;
+  height: 572px;
 }
 
 .pokedex-visor {
@@ -61,6 +62,7 @@ body {
 .pokemon-image {
   text-align: center;
   margin-bottom: 20px;
+  height: 124px;
 }
 
 .pokemon-image picture img {
@@ -73,6 +75,8 @@ body {
 
 .pokemon-info-container p {
   margin: 0.5rem 0;
+  text-transform: capitalize;
+  font-weight: 700;
 }
 
 .pokemon-info-content {
@@ -265,8 +269,13 @@ body {
   }
 
   .pokedex {
-    height: 72vh;
     margin-bottom: 14vh;
     margin-top: 14vh;
+  }
+}
+
+@media (max-height: 788px) {
+  body {
+    margin: 3% 0;
   }
 }
