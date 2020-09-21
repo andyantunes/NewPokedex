@@ -68,7 +68,8 @@ function ConvertTypesToString($types) {
 }
 
 function GetPokemonImage($id) {
-    $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
+    // $URL_IMAGE = "https://www.canalti.com.br/api/pokemons.json";
+    $URL_IMAGE = "./utils/pokemonImages.json";
     $obj = json_decode(file_get_contents($URL_IMAGE));
     $pokemonArray = $obj->pokemon;
     $url = '';
