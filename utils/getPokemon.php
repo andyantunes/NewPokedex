@@ -10,10 +10,15 @@ function GetPokemon() {
     
     if (isset($_POST['search']) && HasIdentification($id, $name)) {
         $identification = ($_POST['pokemonName']) ? strtolower($_POST['pokemonName']) : $_POST['pokemonId'];
-        $data = GetPokemonData($identification);
-        $pokemonObject = MountFinalObject($data);
+        $pokemonData = GetPokemonData($identification);
+        
+        if($pokemonData->id <= 151) {
+            $pokemonObject = MountFinalObject($pokemonData);
+        } else {
+            $pokemonObject = InvalidIdentification('151 pokemons cadastrados');
+        }
     } else {
-        $pokemonObject = IdentificationEmpty();
+        $pokemonObject = InvalidIdentification();
     }
 
     return $pokemonObject;
@@ -25,7 +30,7 @@ function GetPokemonData(String $identification) {
     return json_decode(file_get_contents($json));
 }
 
-function IdentificationEmpty() {
+function InvalidIdentification($message = 'Pesquise um pokemon') {
     return (object) [
         'id' => '',
         'name' => '',
@@ -36,7 +41,7 @@ function IdentificationEmpty() {
         'speed' => '',
         'image' => './assets/images/pokebola.gif',
         'image_back' => './assets/images/transparent.png',
-        'message' => 'Pesquise um pokemon',
+        'message' => $message,
     ];
 }
 
@@ -55,11 +60,11 @@ function MountFinalObject(Object $pokemonObject) {
     ];
 }
 
-function HasIdentification($name, $id) {
+function HasIdentification(String $name, String $id) {
     return ($name !== '' || $id !== '') ? true : false;
 }
 
-function ConvertTypesToString($types) {
+function ConvertTypesToString(Array $types) {
     $typesString = '';
     for ($i=0; $i < sizeof($types); $i++) { 
         $typesString .= ($i == 0) ? "{$types[$i]->type->name}" : " | {$types[$i]->type->name}";
