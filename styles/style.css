@@ -86,7 +86,7 @@ body {
 .message-container {
   margin: 10px auto;
   background: #f2f2f2;
-  max-width: 60%;
+  max-width: 80%;
   height: 25px;
   text-align: center;
   display: flex;
