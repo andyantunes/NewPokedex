@@ -1,5 +1,5 @@
 <?php 
-include_once ('./utils/getPokemon.php');
+include_once ('./getPokemon.php');
 $pokemon = GetPokemon();
 ?>
 
