@@ -12,18 +12,31 @@ function GetPokemon() {
     $id = (isset($_POST['pokemonId'])) ? $_POST['pokemonId'] : '';
     $name = (isset($_POST['pokemonName'])) ? $_POST['pokemonName'] : '';
     
-    if (isset($_POST['search']) && HasIdentification($id, $name)) {
-        $identification = ($_POST['pokemonId']) ? FilterId($_POST['pokemonId']) : strtolower($_POST['pokemonName']);
-        
-        if(($identification > 0 || $identification != '') && $identification <= 151) {
+    if(isset($_POST['search'])) {
+        if(IdentificationIsValid($id, $name)) {
+            $identification = ($_POST['pokemonId']) ? FilterId($_POST['pokemonId']) : strtolower($_POST['pokemonName']);
+            
             $pokemonData = GetPokemonData($identification);
             $pokemonObject = MountFinalObject($pokemonData);
         } else {
-            $pokemonObject = InvalidIdentification('151 pokemons cadastrados');
+            $pokemonObject = EmptyMessage('151 pokemons cadastrados');
         }
     } else {
-        $pokemonObject = InvalidIdentification();
+        $pokemonObject = EmptyMessage();
     }
+
+    // if (isset($_POST['search']) && IdentificationIsValid($id, $name)) {
+    //     $identification = ($_POST['pokemonId']) ? FilterId($_POST['pokemonId']) : strtolower($_POST['pokemonName']);
+        
+    //     if(($identification > 0 || $identification != '') && $identification <= 151) {
+    //         $pokemonData = GetPokemonData($identification);
+    //         $pokemonObject = MountFinalObject($pokemonData);
+    //     } else {
+    //         $pokemonObject = EmptyMessage('151 pokemons cadastrados');
+    //     }
+    // } else {
+    //     $pokemonObject = EmptyMessage();
+    // }
 
     return $pokemonObject;
 }

@@ -1,10 +1,21 @@
 <?php
 
-function HasIdentification(String $name, String $id) {
-    return ($name !== '' || $id !== '') ? true : false;
+function IdentificationIsValid(String $name, String $id) {
+    $error = false;
+    if($name !== '') {
+        var_dump($name);
+        $error = true;
+    } elseif ($id !== '') {
+        if(intval($id) > 0 && intval($id) <= 151) {
+            $error = true;
+        } else {
+            $error = false;
+        }
+    }
+    return $error;
 }
 
-function InvalidIdentification($message = 'Pesquise um pokemon') {
+function EmptyMessage($message = 'Pesquise um pokemon') {
     return (object) [
         'id' => '',
         'name' => '',
