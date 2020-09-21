@@ -3,7 +3,6 @@
 function IdentificationIsValid(String $name, String $id) {
     $error = false;
     if($name !== '') {
-        var_dump($name);
         $error = true;
     } elseif ($id !== '') {
         if(intval($id) > 0 && intval($id) <= 151) {
