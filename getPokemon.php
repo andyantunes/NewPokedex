@@ -24,13 +24,15 @@ function GetPokemon() {
     } elseif (isset($_POST['upAction'])) {
         $pokemonId = str_replace('#', '', $_POST['upAction']);
 
-        $pokemonData = GetPokemonData($pokemonId + 1);
-        $pokemonObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
+        $pokemonData = GetPokemonData(intval($pokemonId) + 1);
+        $firstObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
+        $pokemonObject = (intval($pokemonId) + 1 <= 151) ? $firstObject : EmptyMessage('Pokemon Não cadastrado');
     } elseif (isset($_POST['downAction'])) {
         $pokemonId = str_replace('#', '', $_POST['downAction']);
-
-        $pokemonData = GetPokemonData($pokemonId - 1);
-        $pokemonObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
+        
+        $pokemonData = GetPokemonData(intval($pokemonId) - 1);
+        $firstObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
+        $pokemonObject = (intval($pokemonId) - 1 > 0) ? $firstObject : EmptyMessage('Pokemon Não cadastrado');
     } else {
         $pokemonObject = EmptyMessage();
     }
