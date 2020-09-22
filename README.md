@@ -33,7 +33,7 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
 ## Funcionamento
-<img src="" alt="" />
+<img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/prints/pokedex.png" alt="Imagem da pokedex criada para o projeto de consumo de API" />
 
 Existem dois campos para busca:
 <ul>
@@ -44,3 +44,5 @@ Existem dois campos para busca:
 Ao clicar em 'BUSCA', é retornado as informações do pokemon encontrado.
 
 É possível também obter resultado através do teclado no lado direito, onde, clicando para cima busca o próximo pokemon e para baixo busca o anterior.
+
+A baixo o visor existe um local para exibição de mensagens ao usuário.
