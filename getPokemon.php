@@ -21,6 +21,11 @@ function GetPokemon() {
         } else {
             $pokemonObject = EmptyMessage('151 pokemons cadastrados');
         }
+    } elseif (isset($_POST['upAction'])) {
+        $valor = str_replace('#', '', $_POST['upAction']);
+
+        $pokemonData = GetPokemonData($valor + 1);
+        $pokemonObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
     } else {
         $pokemonObject = EmptyMessage();
     }
