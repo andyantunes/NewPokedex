@@ -32,7 +32,7 @@ function GetPokemon() {
         
         $pokemonData = GetPokemonData(intval($pokemonId) - 1);
         $firstObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
-        $pokemonObject = (intval($pokemonId) - 1 > 0) ? $firstObject : EmptyMessage('Pokemon Não cadastrado');
+        $pokemonObject = (intval($pokemonId) - 1 > 0) ? $firstObject : EmptyMessage('Pokemon Não existe');
     } else {
         $pokemonObject = EmptyMessage();
     }
