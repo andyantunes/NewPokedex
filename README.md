@@ -2,7 +2,7 @@
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
 ## Objetivo
-Consumir uma API e exibir os dados ao usuário através de uma página web.
+Consumir uma API e exibir os dados ao usuário através de uma página web utilizando apenas HTML, CSS e PHP.
 
 ## O projeto
 Neste projeto criamos uma página web que exibirá os dados consumidos de uma API com o tema Pokemon.
