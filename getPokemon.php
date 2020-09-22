@@ -22,9 +22,14 @@ function GetPokemon() {
             $pokemonObject = EmptyMessage('151 pokemons cadastrados');
         }
     } elseif (isset($_POST['upAction'])) {
-        $valor = str_replace('#', '', $_POST['upAction']);
+        $pokemonId = str_replace('#', '', $_POST['upAction']);
 
-        $pokemonData = GetPokemonData($valor + 1);
+        $pokemonData = GetPokemonData($pokemonId + 1);
+        $pokemonObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
+    } elseif (isset($_POST['downAction'])) {
+        $pokemonId = str_replace('#', '', $_POST['downAction']);
+
+        $pokemonData = GetPokemonData($pokemonId - 1);
         $pokemonObject = ($pokemonData) ? MountFinalObject($pokemonData) : EmptyMessage('Pokemon Não existe');
     } else {
         $pokemonObject = EmptyMessage();

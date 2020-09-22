@@ -91,12 +91,12 @@ $pokemon = GetPokemon();
 
                         <label class="up" for="upAction">
                             <i class="fas fa-caret-up"></i>
-                            <input type="submit" name="upAction" value="<?=$pokemon->id?>" id="upAction">
+                            <input type="submit" name="upAction" value="<?=$pokemon->id?>" id="upAction" />
                         </label>
 
                         <label class="down" for="downAction">
                             <i class="fas fa-caret-down"></i>
-                            <input type="radio" name="action" id="downAction">
+                            <input type="submit" name="downAction" value="<?=$pokemon->id?>" id="downAction" />
                         </label>
 
                         <label class="right" for="rightAction">
