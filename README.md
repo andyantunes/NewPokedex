@@ -1,4 +1,4 @@
-# NewPokedex
+# <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" />NewPokedex
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
 ## Objetivo
