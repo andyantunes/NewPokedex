@@ -33,6 +33,14 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
 ## Funcionamento
-
 <img src="" alt="" />
 
+Existem dois campos para busca:
+<ul>
+  <li>Por nome</li>
+  <li>Por id</li>
+</ul>
+
+Ao clicar em 'BUSCA', é retornado as informações do pokemon encontrado.
+
+É possível também obter resultado através do teclado no lado direito, onde, clicando para cima busca o próximo pokemon e para baixo busca o anterior.
