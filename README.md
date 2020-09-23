@@ -15,7 +15,7 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
   <li>Imagem</li>
   <li>Tipos</li>
   <li>Ataque</li>
-  <li>Deseza</li>
+  <li>Defesa</li>
   <li>Rapidez</li>
 </ul>
 
