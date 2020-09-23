@@ -1,4 +1,4 @@
-# <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" />NewPokedex
+# <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" />  NewPokedex
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
 ## Objetivo
@@ -29,6 +29,13 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
 ##### XAMPP
+<ul>
+  <li>Instalar o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a></li>
+  <li>Ir até a pasta htdocs e baixar o projeto, por padrão ela é instalada em 'C:\xampp\htdocs\'</li>
+  <li>Abrir o navegador e digitar localhost ou o ip 127.0.0.1</li>
+  <li>Será listado as pastas existentes, procurar por NewPokedex e acessar o arquivo index dentro da mesma</li>
+</ul>
+
 
 ##### WampServer
 <ul>
