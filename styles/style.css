@@ -30,6 +30,7 @@ body {
   justify-content: center;
   margin: auto;
   height: 590px;
+  cursor: default;
 }
 
 .image-title {
