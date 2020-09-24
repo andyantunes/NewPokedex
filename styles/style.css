@@ -209,7 +209,8 @@ body {
 .controls-container i {
   padding: 3px;
   cursor: pointer;
-  color: #dfa805;
+  color: #fdd252;
+  margin-left: 3.5%;
 }
 
 .controls-container .up i {
@@ -231,7 +232,7 @@ body {
 }
 
 .external-circle {
-  background: #dfa805;
+  background: #fdd252;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -240,11 +241,11 @@ body {
   position: absolute;
   z-index: 10;
   padding: 2px;
-  margin-left: 5%;
+  margin-left: 3.5%;
 }
 
 .internal-circle {
-  background: #dfa805;
+  background: #fdd252;
   width: 12px;
   height: 12px;
   border-radius: 50%;
