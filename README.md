@@ -61,7 +61,7 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 • Ao clicar em no botão 'BUSCA':
 <ul>
 <li>É retornado os dados do Pokémon encontrado;</li>
-<li>É retornada a mensagem de erro no visor "Pokémon Não existe" ou "Pokemon Não cadastrado".</li> 
+<li>É retornada a mensagem de erro no visor "Pokémon Não existe" ou "Pokémon Não cadastrado".</li> 
 </ul>
 
 • Existem dois seletores para exibição ápos a busca:
