@@ -221,7 +221,7 @@ body {
 .controls-container i {
   padding: 3px;
   cursor: pointer;
-  color: #fdd252;
+  color: #bb8d03;
   margin-left: 3.5%;
 }
 
@@ -244,7 +244,7 @@ body {
 }
 
 .external-circle {
-  background: #fdd252;
+  background: #bb8d03;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -257,7 +257,7 @@ body {
 }
 
 .internal-circle {
-  background: #fdd252;
+  background: #bb8d03;
   width: 12px;
   height: 12px;
   border-radius: 50%;
