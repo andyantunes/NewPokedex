@@ -272,6 +272,10 @@ body {
   body {
     margin: 2.5% 0;
   }
+
+  .external-pokemon {
+    top: 40%;
+  }
 }
 
 @media (max-width: 500px) {
