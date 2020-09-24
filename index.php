@@ -98,16 +98,6 @@ $pokemon = GetPokemon();
                             <i class="fas fa-caret-down"></i>
                             <input type="submit" name="downAction" value="<?=$pokemon->id?>" id="downAction" />
                         </label>
-
-                        <label class="right" for="rightAction">
-                            <i class="fas fa-caret-right"></i>
-                            <input type="radio" name="action" id="rightAction">
-                        </label>
-
-                        <label class="left" for="leftAction">
-                            <i class="fas fa-caret-left"></i>
-                            <input type="radio" name="action" id="leftAction">
-                        </label>
                     </div>
                 </form>
             </section>
