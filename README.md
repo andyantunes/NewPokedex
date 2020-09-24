@@ -1,7 +1,7 @@
 #  <img class="img-fluid" src="./assets/images/pokedex.png"  alt="Logotipo Pokédex">
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
-## Objetivo
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Objetivo
 Consumir uma API e exibir os dados ao usuário através de uma página web utilizando apenas HTML, CSS e PHP.
 
 ## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Projeto
@@ -33,7 +33,7 @@ onde os parâmetros de busca são o nome ou o id do Pokémon.
 ## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Instalação
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
-##### <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> XAMPP
+##### XAMPP
 <ul>
   <li>Instalar o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a></li>
   <li>Ir até a pasta htdocs e baixar o projeto, por padrão ela é instalada em 'C:\xampp\htdocs\'</li>
@@ -42,7 +42,7 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 </ul>
 
 
-##### <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> WampServer
+##### WampServer
 <ul>
   <li>Instalar o <a href="https://www.wampserver.com/en/">WampServer</a></li>
   <li>Ir até a pasta www e baixar o projeto, por padrão ela é instalada em 'C:\wamp64\www\'</li>
