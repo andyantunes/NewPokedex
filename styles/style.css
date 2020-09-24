@@ -14,7 +14,7 @@ body {
 .external-pokemon {
   position: absolute;
   right: 12%;
-  top: 44%;
+  top: 40%;
   opacity: 0.8;
 }
 
@@ -274,7 +274,7 @@ body {
   }
 
   .external-pokemon {
-    top: 40%;
+    top: 44%;
   }
 }
 
