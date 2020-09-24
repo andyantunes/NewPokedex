@@ -1,10 +1,10 @@
 #  <img class="img-fluid" src="./assets/images/pokedex.png"  alt="Logotipo Pokédex">
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
-## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Objetivo
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Objetivo
 Consumir uma API e exibir os dados ao usuário através de uma página web utilizando apenas HTML, CSS e PHP.
 
-## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Projeto
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Projeto
 Neste projeto criamos uma página web que exibirá os dados consumidos de uma API com o tema Pokémon.
 As informações são exibidas dentro de uma "Pokedex", informações que podem ser pesquisadas através do número ou nome do Pokémon.
 
@@ -19,7 +19,7 @@ As informações são exibidas dentro de uma "Pokedex", informações que podem 
   <li>Rapidez</li>
 </ul>
 
-### <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> APIs utilizadas
+### <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> APIs utilizadas
 <ul>
   <li><a href="https://pokeapi.co/">PokeApi</a></li>
   <li><a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a></li>
@@ -30,7 +30,7 @@ onde os parâmetros de busca são o nome ou o id do Pokémon.
 
 • Para as imagens dos Pokémons foi utilizada a API que se encontra no site do <a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a> com o endpoint "https://www.canalti.com.br/api/pokemons.json", onde é retornado um json que possui a URL das imagens.
 
-## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Instalação
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Instalação
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
 ##### XAMPP
@@ -50,7 +50,7 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
   <li>Será listado as pastas existentes, procurar por NewPokedex e entrar nela</li>
 </ul>
 
-## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Funcionamento
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Funcionamento
 <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/prints/pokedex.png" alt="Imagem da pokedex criada para o projeto de consumo de API" />
 
 • Existem dois campos para busca:
@@ -71,6 +71,6 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
   <li>Seta para baixo: Pokémon anterior ao pesquisado na lista.</li>
 </ul>
 
-## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" /> Problemas encontrados
+## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Problemas encontrados
 Percebemos que a exibição dos dados estava demorando, descobrimos que era e requisição das imagens que estavam deixando lento.
 <p>Como solução copiamos o json retornado da API do Canal TI e deixamos local, assim, o programa pegava a URL no arquivo json local para fazer a exibição das imagens.</p>
