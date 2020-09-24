@@ -4,8 +4,8 @@
 }
 
 body {
-  margin: 7.5% 0;
-  overflow-y: auto;
+  margin: 7% 0;
+  overflow-y: hidden;
   background: url("./../assets/images/battlegrass.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,7 +269,7 @@ body {
 
 @media (max-height: 788px) {
   body {
-    margin: 3% 0;
+    margin: 2.5% 0;
   }
 }
 
