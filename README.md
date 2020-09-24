@@ -25,6 +25,10 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
   <li><a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a></li>
 </ul>
 
+• Para recuperar os dados dos pokemons foi utilizada a API <a href="https://pokeapi.co/docs/v2#wrap">PokeAPI</a> com o endpoint "https://pokeapi.co/api/v2/pokemon/{nome ou id}"
+onde os parâmetros de busca são o nome ou o id do pokemon.
+
+• Para as imagens dos pokemons foi utilizada a API que se encontra no site do <a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a> com o endpoint "https://www.canalti.com.br/api/pokemons.json", onde é retornado um json que possui a URL das imagens.
 ## Instalação
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
@@ -48,12 +52,24 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 ## Funcionamento
 <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/prints/pokedex.png" alt="Imagem da pokedex criada para o projeto de consumo de API" />
 
-Existem dois campos para busca:
+• Existem dois campos para busca:
 <ul>
-  <li>Por nome</li>
-  <li>Por id</li>
+  <li>Por nome;</li>
+  <li>Por id.</li>
 </ul>
 
-Ao clicar em 'BUSCA', é retornado as informações do pokemon encontrado.
-É possível também obter resultado através do teclado no lado direito, onde, clicando para cima busca o próximo pokemon e para baixo busca o anterior.
-A baixo o visor existe um local para exibição de mensagens ao usuário.
+• Ao clicar em no botão 'BUSCA':
+<ul>
+<li>É retornado os dados do Pokémon encontrado;</li>
+<li>É retornada a menssagem de erro no visor "Pokémon Não existe" ou "Pokemon Não cadastrado".</li> 
+</ul>
+
+• Existem dois seletores para exibição ápos a busca:
+<ul>
+  <li>Seta para cima: Próximo Pokémon ao pesquisado na lista;</li>
+  <li>Seta para baixo: Pokémon anterior ao pesquisado na lista.</li>
+</ul>
+
+## Problemas encontrados
+Percebemos que a exibição dos dados estavam demorando, descobrimos que era e requisição das imagens que estava deixando lento.
+Como solução copiamos o json retornado da API do Canal TI e deixamos local, assim, o programa pegava a URL no arquivo json local para fazer a exibição das imagens.
