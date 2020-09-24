@@ -51,6 +51,7 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 </ul>
 
 ## <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="20" alt="Pokebola" /> Funcionamento
+• Visualize o <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/wireframe/wireframe.png" /> Wireframe</a>.
 <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/prints/pokedex.png" alt="Imagem da pokedex criada para o projeto de consumo de API" />
 
 • Existem dois campos para busca:
