@@ -5,8 +5,8 @@ Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenv
 Consumir uma API e exibir os dados ao usuário através de uma página web utilizando apenas HTML, CSS e PHP.
 
 ## O projeto
-Neste projeto criamos uma página web que exibirá os dados consumidos de uma API com o tema Pokemon.
-As informações são exibidas dentro de uma "pokedex", informações que podem ser pesquisadas através do número ou nome do pokemon.
+Neste projeto criamos uma página web que exibirá os dados consumidos de uma API com o tema Pokémon.
+As informações são exibidas dentro de uma "Pokedex", informações que podem ser pesquisadas através do número ou nome do Pokémon.
 
 ### Dados exibidos sobre o pokemon
 <ul>
@@ -26,9 +26,9 @@ As informações são exibidas dentro de uma "pokedex", informações que podem 
 </ul>
 
 • Para recuperar os dados dos pokemons foi utilizada a API <a href="https://pokeapi.co/docs/v2#wrap">PokeAPI</a> com o endpoint "https://pokeapi.co/api/v2/pokemon/{nome ou id}"
-onde os parâmetros de busca são o nome ou o id do pokemon.
+onde os parâmetros de busca são o nome ou o id do Pokémon.
 
-• Para as imagens dos pokemons foi utilizada a API que se encontra no site do <a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a> com o endpoint "https://www.canalti.com.br/api/pokemons.json", onde é retornado um json que possui a URL das imagens.
+• Para as imagens dos Pokémons foi utilizada a API que se encontra no site do <a href="https://www.canalti.com.br/api/pokemons.json">Canal TI</a> com o endpoint "https://www.canalti.com.br/api/pokemons.json", onde é retornado um json que possui a URL das imagens.
 ## Instalação
 Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a href="https://www.apachefriends.org/pt_br/download.html">XAMPP</a> e <a href="https://www.wampserver.com/en/">WampServer</a>.
 
@@ -71,5 +71,5 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 </ul>
 
 ## Problemas encontrados
-Percebemos que a exibição dos dados estavam demorando, descobrimos que era e requisição das imagens que estava deixando lento.
-Como solução copiamos o json retornado da API do Canal TI e deixamos local, assim, o programa pegava a URL no arquivo json local para fazer a exibição das imagens.
+Percebemos que a exibição dos dados estava demorando, descobrimos que era e requisição das imagens que estavam deixando lento.
+<p>Como solução copiamos o json retornado da API do Canal TI e deixamos local, assim, o programa pegava a URL no arquivo json local para fazer a exibição das imagens.</p>

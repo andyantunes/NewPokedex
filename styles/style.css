@@ -244,29 +244,16 @@ body {
 }
 
 .external-circle {
-  background: #bb8d03;
+  background: #ebb105;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  left: 40%;
-  top: 38%;
   position: absolute;
   z-index: 10;
   padding: 2px;
   margin-left: 3.5%;
   left: 41%;
-  top: 36%;
-}
-
-.internal-circle {
-  background: #bb8d03;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  left: 17%;
-  top: 11.3%;
-  position: absolute;
-  z-index: 10;
+  top: 38%;
 }
 
 @media (max-width: 992px) {
