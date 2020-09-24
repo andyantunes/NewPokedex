@@ -26,10 +26,10 @@ $pokemon = GetPokemon();
                 </picture>
             </section>
 
-            <section class="image-title">
+            <section class="image-title">       
                 <figure>
-                    <img src="./assets/images/pokeball.png" width="70" alt="">
-                </figure>
+                    <img class="img-fluid" src="./assets/images/pokedex.png"  alt="Logotipo Pokédex">
+                </figure>            
             </section>
 
             <section class="pokedex-visor">
@@ -77,7 +77,7 @@ $pokemon = GetPokemon();
                     <span><?=$pokemon->message?></span>
                 </section>
             </section>
-
+            
             <section class="pokedex-controls">
                 <form action="." method="POST">
                     <div class="search-container">
