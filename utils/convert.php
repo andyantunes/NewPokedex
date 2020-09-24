@@ -5,7 +5,6 @@ function MountFinalObject(Object $pokemonObject) {
         'id' => "#{$pokemonObject->id}",
         'name' => $pokemonObject->name,
         'types' => ConvertTypesToString($pokemonObject->types),
-        'description' => '',
         'attack' => "Ataque {$pokemonObject->stats[1]->base_stat}",
         'defense' => "Defesa {$pokemonObject->stats[2]->base_stat}",
         'speed' => "Rapidez {$pokemonObject->stats[5]->base_stat}",

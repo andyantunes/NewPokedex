@@ -26,6 +26,12 @@ $pokemon = GetPokemon();
                 </picture>
             </section>
 
+            <section class="image-title">
+                <figure>
+                    <img src="./assets/images/pokeball.png" width="70" alt="">
+                </figure>
+            </section>
+
             <section class="pokedex-visor">
                 <div class="pokemon-identification-container">
                     <h2 class="pokemon-identification">
@@ -41,34 +47,35 @@ $pokemon = GetPokemon();
                 </div>
 
                 <div class="pokemon-info-container">
-                    <p class="power-name">
-                        <span>
-                            <?=$pokemon->types?>
-                        </span> 
-                    </p>
-                    <p class="description">
-                        <?=$pokemon->description?>
-                    </p>
-                    <p class="attack"> 
-                        <span>
-                            <?=$pokemon->attack?>
-                        </span>
-                    </p>
-                    <p class="defense"> 
-                        <span>
-                            <?=$pokemon->defense?>
-                        </span>
-                    </p>
-                    <p class="speed"> 
-                        <span>
-                            <?=$pokemon->speed?>
-                        </span>
-                    </p>
+                    <div class="session-1">
+                        <p class="power-name">
+                            <span>
+                                <?=$pokemon->types?>
+                            </span> 
+                        </p>
+                        <p class="attack"> 
+                            <span>
+                                <?=$pokemon->attack?>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="session-2">
+                        <p class="defense"> 
+                            <span>
+                                <?=$pokemon->defense?>
+                            </span>
+                        </p>
+                        <p class="speed"> 
+                            <span>
+                                <?=$pokemon->speed?>
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="message-container">
-                <span><?=$pokemon->message?></span>
+                <section class="message-container">
+                    <span><?=$pokemon->message?></span>
+                </section>
             </section>
 
             <section class="pokedex-controls">
