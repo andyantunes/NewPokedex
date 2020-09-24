@@ -56,19 +56,19 @@ Para utilizar o projeto é necessário utilizar um servidor Apache, como o <a hr
 
 ###### Visualize o <a href="https://github.com/andyantunes/NewPokedex/blob/master/assets/wireframe/wireframe.png"> Wireframe</a>.
 
-######  Existem dois campos para busca:
+##### Existem dois campos para busca:
 <ul>
   <li>Por nome;</li>
   <li>Por id.</li>
 </ul>
 
-######  Ao clicar em no botão 'BUSCA':
+#####  Ao clicar em no botão 'BUSCA':
 <ul>
 <li>É retornado os dados do Pokémon encontrado;</li>
 <li>É retornada a mensagem de erro no visor "Pokémon Não existe" ou "Pokémon Não cadastrado".</li> 
 </ul>
 
-######  Existem dois seletores para exibição ápos a busca:
+##### Existem dois seletores para exibição ápos a busca:
 <ul>
   <li>Seta para cima: Próximo Pokémon ao pesquisado na lista;</li>
   <li>Seta para baixo: Pokémon anterior ao pesquisado na lista.</li>
