@@ -1,4 +1,4 @@
-# <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" />  NewPokedex
+# <img src="https://github.com/andyantunes/NewPokedex/blob/master/assets/images/pokeball.png" width="25" alt="Pokebola" />  <img class="img-fluid" src="./assets/images/pokedex.png"  alt="Logotipo Pokédex">
 Projeto dedicado à resolução de um trabalho de faculdade na disciplina Desenvolvimento para Servidores I.
 
 ## Objetivo
