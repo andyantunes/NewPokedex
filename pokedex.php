@@ -17,7 +17,7 @@ $pokemon = GetPokemon();
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="bodyPokedex">
     <main class="pokedex">
         <article>
             <section class="external-pokemon">

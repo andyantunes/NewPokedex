@@ -4,6 +4,10 @@
 }
 
 body {
+  background-color: #fff;
+}
+
+.bodyPokedex {
   margin: 7% 0;
   overflow-y: hidden;
   background: url("./../assets/images/battlegrass.png");
@@ -255,6 +259,33 @@ body {
   margin-left: 3.5%;
   left: 41%;
   top: 38%;
+}
+
+.bodyIndex {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.contentIndex {
+  background: #111111;
+  border-radius: 2rem;
+  max-width: 360px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 120px;
+  margin-top: 10%;
+  padding: 10px;
+}
+.btnIndex {
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 0.6em;
+  margin-top: 20%;
 }
 
 @media (max-width: 992px) {
