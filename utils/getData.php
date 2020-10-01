@@ -1,11 +1,12 @@
 <?php 
 
 function GetPokemonData(String $identification) {
-    if (!$data = @file_get_contents("https://pokeapi.co/api/v2/pokemon/{$identification}")) {
+    if (file_get_contents("https://pokeapi.co/api/v2/pokemon/{$identification}")) {
+        $data = file_get_contents("https://pokeapi.co/api/v2/pokemon/{$identification}");
+        $return = json_decode($data);
+    } else {
         $error = error_get_last();
         $return = false;
-    } else {
-        $return = json_decode($data);
     }
     return $return;
 }
