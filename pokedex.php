@@ -79,7 +79,7 @@ $pokemon = GetPokemon();
             </section>
             
             <section class="pokedex-controls">
-                <form action="." method="POST">
+                <form action="pokedex.php" method="POST">
                     <div class="search-container">
                         <div class="search-inputs">
                             <input type="text" name="pokemonName" id="pokemonName" placeholder="NOME" />

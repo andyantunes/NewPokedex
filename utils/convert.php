@@ -19,5 +19,6 @@ function ConvertTypesToString(Array $types) {
     for ($i=0; $i < sizeof($types); $i++) { 
         $typesString .= ($i == 0) ? "{$types[$i]->type->name}" : " | {$types[$i]->type->name}";
     }
+    
     return $typesString;
 }
