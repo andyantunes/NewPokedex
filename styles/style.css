@@ -266,16 +266,16 @@ body {
 }
 
 .contentIndex {
-  background: #111111;
   border-radius: 2rem;
   max-width: 360px;
   display: flex;
   justify-content: center;
   margin: auto;
   height: 120px;
-  margin-top: 10%;
+  margin-top: 15%;
   padding: 10px;
 }
+
 .btnIndex {
   margin: auto;
 }
@@ -285,7 +285,7 @@ footer {
   position: relative;
   justify-content: center;
   font-size: 0.6em;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 @media (max-width: 992px) {
